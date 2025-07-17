@@ -1,0 +1,50 @@
+.one {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.content {
+    margin-left: 12rem;
+    margin-top: 7rem;
+}
+
+.o-text h1 {
+    font-size: 3.5rem;
+}
+
+.o-icon {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.b-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: black;
+    border-radius: 50%;
+}
+
+i {
+    color: white;
+}
+
+.o-img {
+    margin-right: 10rem;
+}
+
+img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.o-button button {
+    width: 10rem;
+    margin-top: 0.5rem;
+}

@@ -1,5 +1,19 @@
+@import url(logo.css);
+@import url(header.css);
+@import url(navbar.css);
+@import url(button.css);
+@import url(cone.css);
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body, html {
+    background: #eeeeee;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
