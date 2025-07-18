@@ -6,11 +6,12 @@
 @import url(services.css);
 @import url(card.css);
 @import url(me.css);
-@import url(skilss.css);
+@import url(skills.css);
 
 :root {
     --primary: #4e5dc9;
     --secondary: #d3ae97;
+    --text: #b0c371;
 }
 
 
