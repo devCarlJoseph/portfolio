@@ -1,0 +1,35 @@
+.me {
+    background: var(--primary);
+    height: 30rem;
+}
+
+.me-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.me-pic {
+    width: 23rem;
+    height: 23rem;
+    background: var(--secondary);
+    border-radius: 50%;
+    margin-top: 3.5rem;
+}
+
+
+.me-text {
+    width: 37rem;
+    color: white;
+}
+
+.me-text  h2 {
+    font-size: 2rem;
+}
+
+.me-text h1 {
+    font-size: 4rem;
+}
+

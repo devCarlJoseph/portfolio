@@ -13,6 +13,10 @@
     font-size: 3.5rem;
 }
 
+.o-text p {
+    margin-top: 0.2rem;
+}
+
 .o-icon {
     display: flex;
     gap: 0.5rem;
@@ -31,20 +35,58 @@
 
 i {
     color: white;
+    cursor: pointer;
 }
 
 .o-img {
+    position: relative;
+    margin-top: 2rem;
     margin-right: 10rem;
+    width: 31rem;
+    height: 27rem;
+    background: var(--secondary);
+    border-radius: 40% 40% 40% 10%;
+
 }
 
-img {
-    width: 30rem;
-    height: 30rem;
-    border-radius: 50%;
+.o-img img {
+    width: 20rem;
+    height: 32rem;
+    border-radius: 10%;
+    margin-bottom: 2rem;
     object-fit: cover;
+    position: absolute;
+    bottom: -1.98rem;
+}
+
+.o-cot {
+    width: 9rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background: var(--primary);
+    position: absolute;
+    right: 3rem;
+    top: 6.5rem;
+}
+
+.oc-text {
+    display: flex;
+}
+
+.oc-text h1 {
+    font-size: 0.9rem;
 }
 
 .o-button button {
+    background: var(--primary);
     width: 10rem;
     margin-top: 0.5rem;
+}
+
+i:hover {
+    color: var(--secondary);
+}
+
+.o-button button:hover {
+    background: black;
 }

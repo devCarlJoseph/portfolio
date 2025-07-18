@@ -1,0 +1,50 @@
+.m-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.card {
+    width: 23rem;
+    height: 17.5rem;
+    background: #f0efef;
+    border-radius: 1.5rem;
+}
+
+.c-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.5rem;
+    height: 5.5rem;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.c-text {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.c-text h1 {
+    font-size: 1.7rem;
+}
+
+.c-text > p {
+    padding-top: 0.5rem;
+}
+
+.c-text > h4 {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.c-cont i {
+    color: var(--primary);
+    font-size: 2.3rem;
+}

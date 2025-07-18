@@ -1,7 +1,9 @@
 .logo {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 0.5rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .logo img {
@@ -11,8 +13,10 @@
 
 .logo h1 {
     font-size: 1.5rem;
+    color: white;
 }
 
 span {
-    color: blue;
+    color: var(--secondary);
 }
+

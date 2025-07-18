@@ -3,6 +3,15 @@
 @import url(navbar.css);
 @import url(button.css);
 @import url(cone.css);
+@import url(services.css);
+@import url(card.css);
+@import url(me.css);
+@import url(skilss.css);
+
+:root {
+    --primary: #4e5dc9;
+    --secondary: #d3ae97;
+}
 
 
 * {
@@ -12,7 +21,6 @@
 }
 
 body, html {
-    background: #eeeeee;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 

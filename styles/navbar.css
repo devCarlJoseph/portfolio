@@ -6,11 +6,11 @@ ul {
 a {
     text-decoration: none;
     list-style-type: none;
-    color: black;
+    color: white;
     font-size: 1.1rem;
 }
 
 a:hover {
-    color: blue;
+    color: var(--secondary);
 }
 
