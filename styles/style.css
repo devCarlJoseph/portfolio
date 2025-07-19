@@ -8,6 +8,8 @@
 @import url(me.css);
 @import url(skills.css);
 @import url(proj.css);
+@import url(contact.css);
+@import url(footer.css);
 
 :root {
     --primary: #4e5dc9;

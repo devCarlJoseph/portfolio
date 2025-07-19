@@ -37,9 +37,35 @@
     margin-top: 2rem;
 }
 
-.conts {
-    width: 7rem;
-    height: 7rem;
+.conts,
+.conts-one,
+.conts-two,
+.conts-three,
+.conts-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.5rem;
+    height: 8.5rem;
     background: white;
     border-radius: 50%;
+}
+
+.conts > img {
+    width: 12rem;
+    object-fit: cover;
+}
+
+.conts-one > img {
+    width: 10rem;
+    object-fit: cover;
+}
+
+.conts-two > img,
+.conts-three > img {
+    width: 7rem;
+}
+
+.conts-four > img {
+    width: 8rem;
 }

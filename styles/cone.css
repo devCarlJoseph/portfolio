@@ -1,12 +1,9 @@
 .one {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     margin-top: 5rem;
-}
-
-.content {
-    margin-left: 12rem;
-    margin-top: 7rem;
 }
 
 .o-text h1 {
@@ -41,7 +38,6 @@ i {
 .o-img {
     position: relative;
     margin-top: 2rem;
-    margin-right: 10rem;
     width: 31rem;
     height: 27rem;
     background: var(--secondary);

@@ -11,12 +11,13 @@
     gap: 3rem;
 }
 
-.me-pic {
+.me-pic img {
     width: 23rem;
     height: 23rem;
     background: var(--secondary);
     border-radius: 50%;
     margin-top: 3.5rem;
+    object-fit: cover;
 }
 
 
@@ -25,7 +26,11 @@
     color: white;
 }
 
-.me-text  h2 {
+.me-text span {
+    color: var(--secondary);
+}
+
+.me-text h2 {
     font-size: 2rem;
 }
 

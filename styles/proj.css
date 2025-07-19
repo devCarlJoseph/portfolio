@@ -39,12 +39,12 @@
     margin-left: 1rem;
 }
 
-.proj {
+.proj > img{
     width: 35rem;
     height: 30rem;
-    background: red;
     border-radius: 1.5rem;
     margin-top: 1rem;
+    object-fit: cover;
 }
 
 .des {
@@ -59,8 +59,9 @@
     align-items: center;
     width: 8rem;
     height: 2.5rem;
-    background: var(--secondary);
+    background: var(--text);
     border-radius: 2rem;
+    color: white;
 }
 
 .des-p h1 {

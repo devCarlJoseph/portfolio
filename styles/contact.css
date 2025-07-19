@@ -1,0 +1,93 @@
+.contact {
+    margin-bottom: 8rem;
+}
+
+.con-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    gap: 1rem;
+}
+
+.con-text {
+    text-align: start;
+}
+
+.con-text > h4 {
+    font-size: 1.5rem;
+}
+
+.con-text > h1 {
+    font-size: 3.8rem;
+    margin-top: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.names,
+.e-cont {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.names > input,
+.e-cont > input {
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid #d3d0d0;
+    background: #f0efef;
+    padding-left: 1rem;
+}
+
+.mess > input {
+    width: 31rem;
+    height: 15rem;
+    border-radius: 1.5rem;
+    border: 1px solid #d3d0d0;
+    background: #f0efef;
+    padding-bottom: 12rem;
+    padding-left: 1rem;
+}
+
+.con-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.i-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.i-bg {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--text);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-bg > i {
+    font-size: 1.2rem;
+}
+
+.i-text {
+    font-size: 0.8rem;
+}
+
+.f-button {
+    margin-top: 1.5rem;
+}
