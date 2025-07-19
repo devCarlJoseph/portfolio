@@ -1,0 +1,73 @@
+.p-main {
+    height: 65rem;
+    background: #f0efef;
+}
+
+.p-text {
+    padding-top: 6rem;
+    margin-left: 12rem;
+}
+
+.p-text > h3 {
+    font-size: 2rem;
+}
+
+.p-text > h1 {
+    font-size: 3rem;
+    padding-top: 0.5rem;
+}
+
+.p-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+
+}
+
+.pc-cont {
+    width: 37rem;
+    height: 40.5rem;
+    background: #fff;
+    border-radius: 1.5rem;
+}
+
+.c {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.proj {
+    width: 35rem;
+    height: 30rem;
+    background: red;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+}
+
+.des {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.des-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 2.5rem;
+    background: var(--secondary);
+    border-radius: 2rem;
+}
+
+.des-p h1 {
+    font-size: 0.9rem;
+}
+
+.proj-text {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}

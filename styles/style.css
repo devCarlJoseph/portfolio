@@ -7,6 +7,7 @@
 @import url(card.css);
 @import url(me.css);
 @import url(skills.css);
+@import url(proj.css);
 
 :root {
     --primary: #4e5dc9;
