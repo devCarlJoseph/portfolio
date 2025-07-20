@@ -6,8 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
-    gap: 1rem;
+    margin-top: 6.5rem;
+    gap: 2rem;
 }
 
 .con-text {
@@ -28,6 +28,7 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-top: 5rem;
 }
 
 .names,
@@ -42,8 +43,10 @@ form {
     height: 2.5rem;
     border-radius: 1.5rem;
     border: 1px solid #d3d0d0;
+    outline: none;
     background: #f0efef;
     padding-left: 1rem;
+    
 }
 
 .mess > input {
@@ -51,6 +54,7 @@ form {
     height: 15rem;
     border-radius: 1.5rem;
     border: 1px solid #d3d0d0;
+    outline: none;
     background: #f0efef;
     padding-bottom: 12rem;
     padding-left: 1rem;
@@ -84,10 +88,21 @@ form {
     font-size: 1.2rem;
 }
 
-.i-text {
-    font-size: 0.8rem;
+.i-text > h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
-.f-button {
+.f-button > button {
     margin-top: 1.5rem;
+    background: var(--text);
+}
+
+.f-button > button:hover {
+    background: #000;
+    color: white;
+}
+
+.i-bg > i:hover {
+    color: black;
 }

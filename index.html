@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>C4R1 J0</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -21,23 +27,26 @@
             <div>
                 <nav>
                     <ul>
-                        <a href="#">
-                            <li>About</li>
+                        <a href="/index.html">
+                            <li>Home</li>
                         </a>
-                        <a href="#">
-                            <li>Skills</li>
-                        </a>
-                        <a href="#">
+                        <a href="#Services">
                             <li>Services</li>
                         </a>
-                        <a href="#">
+                        <a href="#About">
+                            <li>About</li>
+                        </a>
+                        <a href="#Skills">
+                            <li>Skills</li>
+                        </a>
+                        <a href="#Projects">
                             <li>Projects</li>
                         </a>
                     </ul>
                 </nav>
             </div>
             <div class="button">
-                <button>Contact Me</button>
+                <button><a href="/pages/contact.html">Contact Me</a></button>
             </div>
         </div>
     </header>
@@ -79,7 +88,7 @@
             </div>
         </section>
         <!--Services-->
-        <section>
+        <section id="Services">
             <div class="s-text">
                 <h1> <span>Services</span> | Provide</h1>
             </div>
@@ -90,8 +99,9 @@
                     </div>
                     <div class="c-text">
                         <h1>UI/UX Design</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odio suscipit at!</p>
-                        <h4>Learn More</h4>
+                        <p>UI/UX design enhances user satisfaction by improving the usability, accessibility, and
+                            interaction of digital products.</p>
+                        <h4>Learn More <span>→</span></h4>
                     </div>
                 </div>
                 <div class="card">
@@ -100,8 +110,8 @@
                     </div>
                     <div class="c-text">
                         <h1>Graphic Design</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quo culpa accusamus.</p>
-                        <h4>Learn More</h4>
+                        <p>Graphic design communicates visual messages through creative use of , imagery, and layout.</p>
+                        <h4>Learn More <span>→</span></h4>
                     </div>
                 </div>
                 <div class="card">
@@ -110,14 +120,14 @@
                     </div>
                     <div class="c-text">
                         <h1>Website Design</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti perspiciatis</p>
-                        <h4>Learn More</h4>
+                        <p>Website design focuses on creating visually appealing, responsive, and user-friendly web pages.</p>
+                        <h4>Learn More <span>→</span></h4>
                     </div>
                 </div>
             </div>
         </section>
         <!--About Me-->
-        <section>
+        <section id="About">
             <div class="me">
                 <div class="me-cont">
                     <div class="me-pic">
@@ -125,22 +135,48 @@
                     </div>
                     <div class="me-text">
                         <div>
-                            <h2><span>-</span> About Me</h2>
+                            <p class="p"><span>- </span>About Me</p>
                             <h1>Who is <span>Carl Joseph?</span></h1>
                         </div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, commodi voluptatum. Sunt
-                                fugit magni aliquid?</p>
+                            <p>A motivated and detail-oriented junior web developer with hands-on experience in building
+                                responsive websites using basic front-end frameworks such as React and Tailwind CSS.
+                                Proficient in HTML, CSS, and JavaScript, with a strong understanding of UI/UX principles
+                                and cross-browser compatibility. Passionate about creating clean, user-friendly
+                                interfaces and eager to grow within a collaborative development team.</p>
+                            <br>
+                            <p>
+                                I'm excited to contribute my skills to meaningful projects and continue developing as a
+                                web developer. I'm always open to learning new tools, collaborating with others, and
+                                turning creative ideas into interactive web experiences.
+                            </p>
                         </div>
+                    </div>
+                </div>
+                <div class="c-main">
+                    <div class="me-cards">
+                        <img src="/images/ccs.jpg" alt="">
+                        <h1>Cordova Central School</h1>
+                        <p>Batch - 2018</p>
+                    </div>
+                    <div class="me-card">
+                        <img src="/images/cccs.jpg" alt="">
+                        <h1>Cordova Catholic <br> Cooperative School</h1>
+                        <p>Batch - 2024</p>
+                    </div>
+                    <div class="me-cards">
+                        <img src="/images/cpc.jpg" alt="">
+                        <h1>Cordova Public College</h1>
+                        <p>Present</p>
                     </div>
                 </div>
             </div>
         </section>
         <!--Skills-->
-        <section>
+        <section id="Skills">
             <div class="skills">
                 <div class="sk-text">
-                    <p>My Favorite Tools</p>
+                    <p class="p"><span>- </span>My Skills</p>
                     <h1><span>Exploring the Skills</span><br> Behind My Designs</h1>
                 </div>
                 <div>
@@ -190,11 +226,11 @@
             </div>
         </section>
         <!--My Projects-->
-        <section>
+        <section id="Projects">
             <div class="p-main">
                 <div class="p-cont">
                     <div class="p-text">
-                        <h3>- My Portfolio</h3>
+                        <p class="p"><span>- </span>My Portfolio</p>
                         <h1>My Latest <span>Projects</span></h1>
                     </div>
                     <div class="p-card">
@@ -208,14 +244,14 @@
                                         <h1>UI/UX Design</h1>
                                     </div>
                                     <div class="des-p">
-                                        <h1>UI/UX Design</h1>
+                                        <h1>Web Design</h1>
                                     </div>
                                     <div class="des-p">
-                                        <h1>UI/UX Design</h1>
+                                        <h1>Warframe</h1>
                                     </div>
                                 </div>
                                 <div class="proj-text">
-                                    <h1>CarlJ Furniture - Furniture Ecommerce <br>Website Solution </h1>
+                                    <h1>CarlJ Furniture - Furniture Ecommerce <br>Ordering Website Solution </h1>
                                 </div>
                             </div>
                         </div>
@@ -229,14 +265,14 @@
                                         <h1>UI/UX Design</h1>
                                     </div>
                                     <div class="des-p">
-                                        <h1>UI/UX Design</h1>
+                                        <h1>Web Design</h1>
                                     </div>
                                     <div class="des-p">
-                                        <h1>UI/UX Design</h1>
+                                        <h1>Warframe</h1>
                                     </div>
                                 </div>
                                 <div class="proj-text">
-                                    <h1>CjCo Restaurant - Online Restaurant <br> App Solution</h1>
+                                    <h1>CjCo Restaurant - Online Restaurant <br> Website Solution</h1>
                                 </div>
                             </div>
                         </div>
@@ -245,14 +281,15 @@
             </div>
         </section>
         <!--Contact Me-->
-        <section>
+        <section id="Contact">
             <div class="contact">
                 <div class="con-content">
                     <div>
                         <div class="con-text">
-                            <h4>- Contact Me</h4>
+                            <p class="p"><span>- </span>Contact Me</p>
                             <h1>Let's Talk for <span>Your <br> Next Project</span></h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, voluptatum.</p>
+                            <p>Feel free to reach out to me so we can talk about your website, etc.; here's <br> my
+                                contact information below.</p>
                         </div>
                         <div class="con-icon">
                             <div class="i-content">

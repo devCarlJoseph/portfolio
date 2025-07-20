@@ -10,6 +10,7 @@
 @import url(proj.css);
 @import url(contact.css);
 @import url(footer.css);
+@import url(cpage.css);
 
 :root {
     --primary: #4e5dc9;
@@ -24,8 +25,16 @@
     box-sizing: border-box;
 }
 
-body, html {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body,
+html {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    scroll-behavior: smooth;
 }
 
-
+.p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
