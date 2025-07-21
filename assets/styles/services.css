@@ -1,0 +1,12 @@
+.s-text {
+    margin-top: 5rem;
+    margin-left: 12rem;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .s-text {
+        text-align: center;
+        margin-left: 0;
+    }
+}

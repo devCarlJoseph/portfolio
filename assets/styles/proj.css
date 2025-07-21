@@ -7,11 +7,11 @@
     margin-left: 12rem;
 }
 
-.p-text > h3 {
+.p-text>h3 {
     font-size: 2rem;
 }
 
-.p-text > h1 {
+.p-text>h1 {
     font-size: 3rem;
     padding-top: 0.5rem;
 }
@@ -22,7 +22,6 @@
     align-items: center;
     gap: 1rem;
     margin-top: 2.5rem;
-
 }
 
 .pc-cont {
@@ -39,7 +38,7 @@
     margin-left: 1rem;
 }
 
-.proj > img{
+.proj>img {
     width: 35rem;
     height: 30rem;
     border-radius: 1.5rem;
@@ -76,4 +75,62 @@
 
 .des-p:hover {
     background: #000;
+}
+
+@media only screen and (max-width: 768px) {
+    .p-card {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 0.5rem;
+    }
+
+    .p-text {
+        text-align: center;
+        margin-left: 0rem;
+    }
+
+    .pc-cont {
+        margin-bottom: 4.3rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .p-text {
+        padding-top: 2.5rem;
+    }
+
+    .p-text>h1 {
+        font-size: 2.2rem;
+        padding-top: 0.5rem;
+    }
+
+    .pc-cont {
+        width: 20rem;
+        height: 22rem;
+        background: #fff;
+        border-radius: 1.5rem;
+        margin-bottom: 2.3rem;
+    }
+
+    .proj>img {
+        width: 18rem;
+        height: 15rem;
+        border-radius: 1.5rem;
+        margin-top: 1rem;
+        object-fit: cover;
+    }
+
+    .des-p {
+        width: 5rem;
+        height: 1.5rem;
+        border-radius: 1.5rem;
+    }
+
+    .des-p h1 {
+        font-size: 0.6rem;
+    }
+
+    .proj-text {
+        font-size: 0.5rem;
+    }
 }

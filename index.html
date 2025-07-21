@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C4R1 J0</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,41 +15,81 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "kQ8BLqVB0qJ7ip772",
+            });
+        })();
+    </script>
 </head>
 
 <body>
-    <header>
-        <div class="head">
-            <div class="logo">
-                <img src="/images/logo.png">
-                <h1>C4R1 J0</h1>
+    <div class="h">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <img src="assets/images/logo.png">
+                    <h1>C4R1 J0</h1>
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            <a href="/index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="#Services">
+                                <li>Services</li>
+                            </a>
+                            <a href="#About">
+                                <li>About</li>
+                            </a>
+                            <a href="#Skills">
+                                <li>Skills</li>
+                            </a>
+                            <a href="#Projects">
+                                <li>Projects</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="button">
+                    <button><a href="/pages/contact.html">Contact Me</a></button>
+                </div>
+                <div class="open">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
             <div>
-                <nav>
-                    <ul>
-                        <a href="/index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="#Services">
-                            <li>Services</li>
-                        </a>
-                        <a href="#About">
-                            <li>About</li>
-                        </a>
-                        <a href="#Skills">
-                            <li>Skills</li>
-                        </a>
-                        <a href="#Projects">
-                            <li>Projects</li>
-                        </a>
-                    </ul>
-                </nav>
+                <div class="bars">
+                    <div class="bars-content">
+                        <ul>
+                            <a href="/index.html">
+                                <li class="o">Home</li>
+                            </a>
+                            <a href="#Services">
+                                <li>Services</li>
+                            </a>
+                            <a href="#About">
+                                <li>About</li>
+                            </a>
+                            <a href="#Skills">
+                                <li>Skills</li>
+                            </a>
+                            <a href="#Projects">
+                                <li>Projects</li>
+                            </a>
+                            <a href="/pages/contact.html">
+                                <li class="t">Contact Me</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="button">
-                <button><a href="/pages/contact.html">Contact Me</a></button>
-            </div>
-        </div>
-    </header>
+        </header>
+    </div>
     <main>
         <section>
             <div class="one">
@@ -83,7 +123,7 @@
 
                         </div>
                     </div>
-                    <img src="/images/human.png">
+                    <img src="assets/images/human.png">
                 </div>
             </div>
         </section>
@@ -133,7 +173,7 @@
             <div class="me">
                 <div class="me-cont">
                     <div class="me-pic">
-                        <img src="/images/cj.jpg" alt="">
+                        <img src="assets/images/cj.jpg">
                     </div>
                     <div class="me-text">
                         <div>
@@ -157,17 +197,17 @@
                 </div>
                 <div class="c-main">
                     <div class="me-cards">
-                        <img src="/images/ccs.jpg" alt="">
+                        <img src="assets/images/ccs.jpg" alt="">
                         <h1>Cordova Central School</h1>
                         <p>Batch - 2018</p>
                     </div>
                     <div class="me-card">
-                        <img src="/images/cccs.jpg" alt="">
+                        <img src="assets/images/cccs.jpg" alt="">
                         <h1>Cordova Catholic <br> Cooperative School</h1>
                         <p>Batch - 2024</p>
                     </div>
                     <div class="me-cards">
-                        <img src="/images/cpc.jpg" alt="">
+                        <img src="assets/images/cpc.jpg" alt="">
                         <h1>Cordova Public College</h1>
                         <p>Present</p>
                     </div>
@@ -185,7 +225,7 @@
                     <div class="sk-one">
                         <div class="sk-cont">
                             <div class="conts">
-                                <img src="/images/css.png" alt="">
+                                <img src="assets/images/css.png" alt="">
                             </div>
                             <div>
                                 <h1>100%</h1>
@@ -193,7 +233,7 @@
                         </div>
                         <div class="sk-cont">
                             <div class="conts-one">
-                                <img src="/images/js.png" alt="">
+                                <img src="assets/images/js.png" alt="">
                             </div>
                             <div>
                                 <h1>95%</h1>
@@ -201,7 +241,7 @@
                         </div>
                         <div class="sk-cont">
                             <div class="conts-two">
-                                <img src="/images/tailwind.png" alt="">
+                                <img src="assets/images/tailwind.png" alt="">
                             </div>
                             <div>
                                 <h1>90%</h1>
@@ -209,7 +249,7 @@
                         </div>
                         <div class="sk-cont">
                             <div class="conts-three">
-                                <img src="/images/react.png" alt="">
+                                <img src="assets/images/react.png" alt="">
                             </div>
                             <div>
                                 <h1>85%</h1>
@@ -217,7 +257,7 @@
                         </div>
                         <div class="sk-cont">
                             <div class="conts-four">
-                                <img src="/images/jquery.png" alt="">
+                                <img src="assets/images/jquery.png" alt="">
                             </div>
                             <div>
                                 <h1>70%</h1>
@@ -239,7 +279,7 @@
                         <div class="pc-cont">
                             <div class="c">
                                 <div class="proj">
-                                    <img src="/images/ecommerce.png">
+                                    <img src="assets/images/ecommerce.png">
                                 </div>
                                 <div class="des">
                                     <div class="des-p">
@@ -260,7 +300,7 @@
                         <div class="pc-cont">
                             <div class="c">
                                 <div class="proj">
-                                    <img src="/images/restaurant.png" alt="">
+                                    <img src="assets/images/restaurant.png" alt="">
                                 </div>
                                 <div class="des">
                                     <div class="des-p">
@@ -331,20 +371,20 @@
                     <div>
                         <form>
                             <div class="names">
-                                <input type="text" placeholder="First Name">
-                                <input type="text" placeholder="Last Name">
+                                <input type="text" name="fname" id="fname" placeholder="First Name">
+                                <input type="text" name="lname" id="lname" placeholder="Last Name">
                             </div>
                             <div class="e-cont">
-                                <input type="text" placeholder="Email Address">
-                                <input type="text" placeholder="Contact Number">
+                                <input type="text" name="email" id="email" placeholder="Email Address">
+                                <input type="text" name="contact" id="contact" placeholder="Contact Number">
                             </div>
                             <div class="mess">
-                                <input type="text" placeholder="Message">
+                                <input type="text" name="message" id="message" placeholder="Message">
+                            </div>
+                            <div class="f-button">
+                                <button type="button" onclick="sendGmail()">Submit</button>
                             </div>
                         </form>
-                        <div class="f-button">
-                            <button>Submit</button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -380,6 +420,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="/assets/js/script.js">
+
+    </script>
 </body>
 
 </html>

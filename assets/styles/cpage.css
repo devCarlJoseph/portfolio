@@ -1,0 +1,35 @@
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-text {
+    margin-left: 12.5rem;
+    margin-bottom: 1rem;
+}
+
+iframe {
+    width: 70rem;
+    margin-bottom: 10rem;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    iframe {
+        width: 40rem;
+    }
+
+    .m-text {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    iframe {
+        width: 20rem;
+        height: 15rem;
+        margin-bottom: 3rem;
+    }
+}

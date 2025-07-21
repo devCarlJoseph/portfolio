@@ -86,3 +86,65 @@
 .me-cards>p {
     color: #ffffffc5;
 }
+
+@media only screen and (max-width: 768px) {
+    .me {
+        height: 75rem;
+    }
+
+    .me-cont {
+        flex-direction: column;
+    }
+
+    .me-text {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .me-cards {
+        width: 14rem;
+        height: 12.2rem;
+    }
+
+    .me-card {
+        width: 14rem;
+        height: 13.6rem;
+    }
+
+    .me-card>img,
+    .me-cards>img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .me-card>h1,
+    .me-cards>h1 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .me {
+        height: 97rem;
+    }
+
+    .me-pic img {
+        width: 19rem;
+        height: 19rem;
+        margin-top: 2rem;
+    }
+
+    .me-text h1 {
+        font-size: 2rem;
+    }
+
+    .me-text {
+        width: 20rem;
+        text-align: justify;
+    }
+
+    .c-main {
+        flex-direction: column;
+    }
+
+}
