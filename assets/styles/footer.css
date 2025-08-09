@@ -10,7 +10,7 @@ footer {
     gap: 0.5rem;
 }
 
-.f-icon {
+.l-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,9 +22,13 @@ footer {
     margin-bottom: 1rem;
 }
 
-.f-icon > i {
+.l-icon i {
     color: black;
     font-size: 1.9rem;
+}
+
+.l-icon a {
+    color: black;
 }
 
 .f-text {
