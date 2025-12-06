@@ -2,9 +2,12 @@
 
 import Image from "next/image";
 import { LinkButton } from "@/components/ui/button";
-import { Lightbulb, Code, Users, GraduationCap, Briefcase } from "lucide-react";
+import { Lightbulb, Code, Users, GraduationCap, Briefcase, Monitor, Github } from "lucide-react";
 import InfoCard from "@/components/ui/card";
 import TimelineCard from "@/components/ui/timelineCard";
+import SkillsCard from "@/components/ui/skillsCard";
+import ProjectCard from "@/components/ui/projectCard";
+import ContactCard from "@/components/ui/contactCard";
 
 export default function Home() {
   return (
@@ -35,9 +38,9 @@ export default function Home() {
           </div>
           <div className="flex-shrink-0">
             <div className="bg-slate-800 rounded-full flex items-center justify-center border-4 border-sky-400 shadow-2xl shadow-sky-500/20"
-              style={{ width: "220px", height: "220px" }}>
+              style={{ width: "280px", height: "280px" }}>
               <Image
-                src="/images/carl.jpg"
+                src="/carl.jpg"
                 alt="Carl Joseph Sumagang"
                 width={208}
                 height={208}
@@ -135,8 +138,81 @@ export default function Home() {
             </div>
           </div>
         </section>
-         <div className="h-px bg-slate-700 my-16"></div>
+        <div className="h-px bg-slate-700 my-16"></div>
+        <section id="skills" className="py-16">
+          <h2 className="section-heading-line text-4xl font-bold mb-10 text-white">
+            Core Skills & Tools
+          </h2>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <SkillsCard
+              title="Front-End Development"
+              skills={[
+                "HTML5",
+                "CSS3",
+                "Tailwind CSS",
+                "Bootstrap 5",
+                "JavaScript (ES6+)",
+                "jQuery",
+                "React",
+                "Responsive Design",
+                "UI/UX Principles",
+              ]}
+            />
+
+            <SkillsCard
+              title="Back-End & Database"
+              skills={["Node.js / Express", "PHP", "MySQL", "PostgreSQL", "REST APIs"]}
+            />
+
+            <SkillsCard
+              title="Tools & Version Control"
+              skills={["Git & GitHub", "VS Code", "Figma (Basic)"]}
+            />
+
+            <SkillsCard
+              title="Soft Skills"
+              skills={["Rapid Learner", "Team Collaboration", "Documentation", "Time Management"]}
+            />
+          </div>
+        </section>
+        <div className="h-px bg-slate-700 my-16"></div>
+        <section id="projects" className="py-16">
+          <h2 className="section-heading-line text-4xl font-bold mb-10 text-white">
+            Featured Projects
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <ProjectCard
+              title="HayGo Car Rental"
+              category="Rental Platform"
+              description="A user-friendly system that allows customers to browse, book, and manage car rentals efficiently, while providing administrators with tools to track vehicles, reservations, and customer information seamlessly."
+              techStack={["PHP", "MySQL"]}
+              demoLink="#"
+              githubLink="https://github.com/devCarlJoseph/haygo-car"
+              DemoIcon={Monitor}
+              GithubIcon={Github}
+            />
+
+            <ProjectCard
+              title="CjCo Restaurant"
+              category="Restaurant"
+              description="A user-friendly system that allows customers to reserve tables, place orders, and enjoy a seamless dining experience, while helping staff manage reservations, orders, and restaurant operations efficiently."
+              techStack={["React", "Tailwind"]}
+              demoLink="#"
+              githubLink="https://github.com/devCarlJoseph/final-proj"
+              DemoIcon={Monitor}
+              GithubIcon={Github}
+            />
+          </div>
+        </section>
+        <div className="h-px bg-slate-700 my-16"></div>
+        <section id="contact" className="py-16">
+          <h2 className="section-heading-line text-4xl font-bold mb-10 text-white text-center mx-auto">
+            Connect With Me
+          </h2>
+          <ContactCard />
+        </section>
       </main>
     </div>
   );

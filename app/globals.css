@@ -146,3 +146,20 @@ html {
 .timeline-item:last-child::before {
   height: 1rem;
 }
+
+.section-heading-line {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.section-heading-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75px;
+  height: 3px;
+  background-color: #38bdf8;
+  border-radius: 9999px;
+}
