@@ -55,7 +55,7 @@ export default function ProjectCard({
             href={githubLink}
             className="flex items-center text-slate-400 hover:text-white transition"
           >
-            <GithubIcon className="w-4 h-4 mr-1" /> GitHu
+            <GithubIcon className="w-4 h-4 mr-1" /> GitHub
           </a>
         )}
       </div>
