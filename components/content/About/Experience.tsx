@@ -1,5 +1,5 @@
 import { Briefcase, GraduationCap } from "lucide-react";
-import Timeline from "@/components/content/Timeline";
+import Timeline from "@/components/common/Timeline";
 
 
 export default function ExperienceSection() {
