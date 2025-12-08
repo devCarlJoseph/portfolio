@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Header from "@/components/partial/Header";
-import Footer from "@/components/partial/Footer";
+import Navbar from "@/components/content/Navbar";
+import Footer from "@/components/content/Footer";
 import "./globals.css";
 
 
@@ -16,8 +16,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-slate-900 text-gray-200">
-        <Header />
-        {children}
+        <Navbar />
+         <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">{children}</main>
         <Footer />
       </body>
     </html>
