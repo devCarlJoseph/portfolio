@@ -1,6 +1,6 @@
 
 import { Lightbulb, Code, Users } from "lucide-react";
-import InfoCard from "@/components/ui/card";
+import InfoCard from "@/components/common/card";
 
 export default function Description() {
     return (
