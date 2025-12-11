@@ -5,7 +5,9 @@ import Timeline from "@/components/common/Timeline";
 export default function ExperienceSection() {
     return (
         <div className="py-14">
-            <h2 className="section-heading-line text-4xl font-bold mb-10 text-white">Experience & Education</h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-white text-center relative after:block after:w-24 after:h-1 after:bg-sky-400 after:rounded-full after:mt-4 after:mx-auto">
+                Experience & Education
+            </h2>
 
             <div className="max-w-4xl mx-auto space-y-8">
 

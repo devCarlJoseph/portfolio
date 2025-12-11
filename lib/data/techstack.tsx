@@ -12,8 +12,6 @@ export const TechStack = {
             "React",
             "Next.js",
             "TypeScript",
-            "Responsive Design",
-            "UI/UX Principles",
         ],
     },
     backend: {

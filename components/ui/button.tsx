@@ -15,7 +15,7 @@ const linkButtonVariants = cva(
             size: {
                 default: "px-6 py-3",
                 sm: "px-4 py-2 text-sm",
-                lg: "px-8 py-4 text-lg",
+                lg: "px-8 py-4 text-md",
             },
         },
         defaultVariants: {
