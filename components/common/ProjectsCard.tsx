@@ -29,7 +29,7 @@ export default function ProjectCard({
   GithubIcon,
 }: ProjectCardProps) {
   return (
-    <Card className="bg-slate-800 rounded-xl px-1 shadow-xl border border-slate-700 hover:border-sky-500 transition duration-300">
+    <Card className="bg-slate-800 rounded-xl px-3 shadow-xl border border-slate-700 hover:border-sky-500 transition duration-300">
       <CardHeader>
         <CardTitle className="text-xl font-bold text-sky-400">{title}</CardTitle>
         <CardDescription className="text-slate-400 text-sm">{category}</CardDescription>

@@ -28,10 +28,10 @@ const linkButtonVariants = cva(
 interface LinkButtonProps
     extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     VariantProps<typeof linkButtonVariants> {
-    href: string;
+    href?: string;
 }
 
-export function LinkButton({ href, variant, size, className, ...props }: LinkButtonProps) {
+export function LinkButton({ href = "#", variant, size, className, ...props }: LinkButtonProps) {
     return (
         <Link
             href={href}
