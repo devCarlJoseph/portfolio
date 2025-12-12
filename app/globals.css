@@ -126,10 +126,6 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: var(--font-body);
 }
@@ -165,6 +161,18 @@ h1, h2, h3, h4 {
   border: 4px solid #0f172a;
 }
 
+.light-marker {
+  position: absolute;
+  left: 0.8rem;
+  top: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10;
+  border: 4px solid #0f172a;
+}
+
 .timeline-item:last-child::before {
   height: 1rem;
 }
@@ -186,6 +194,24 @@ h1, h2, h3, h4 {
   border-radius: 9999px;
 }
 
+.light-heading-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75px;
+  height: 3px;
+  background-color: #acacac;
+  border-radius: 9999px;
+}
+
+.light-heading-line {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -193,4 +219,9 @@ h1, h2, h3, h4 {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+::view-transition-old(root), ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
 }

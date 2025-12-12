@@ -1,19 +1,19 @@
+"use client"
+
 import { Briefcase, GraduationCap } from "lucide-react";
 import Timeline from "@/components/common/Timeline";
 
-
-export default function ExperienceSection() {
+export function Experience() {
     return (
-        <div className="py-14">
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-white text-center relative after:block after:w-24 after:h-1 after:bg-sky-400 after:rounded-full after:mt-4 after:mx-auto">
-                Experience & Education
-            </h2>
+        <section className="w-full py-10">
+            <div className="mx-auto w-full max-w-screen-xl px-6 lg:px-16">
+                <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-black dark:text-white relative after:bg-gray-400 after:block after:w-24 after:h-1 dark:after:bg-sky-400 after:rounded-full after:mt-4">
+                    Experience & Education
+                </h2>
 
-            <div className="max-w-4xl mx-auto space-y-8">
-
-                <div className="timeline-item pb-8">
-                    <div className="timeline-marker"></div>
-                    <div>
+                <div className="space-y-8">
+                    <div className="timeline-item pb-8">
+                        <div className="light-marker dark:timeline-marker"></div>
                         <Timeline
                             type="education"
                             icon={GraduationCap}
@@ -27,11 +27,9 @@ export default function ExperienceSection() {
                             ]}
                         />
                     </div>
-                </div>
 
-                <div className="timeline-item pb-8">
-                    <div className="timeline-marker"></div>
-                    <div>
+                    <div className="timeline-item pb-8">
+                        <div className="light-marker dark:timeline-marker"></div>
                         <Timeline
                             type="experience"
                             icon={Briefcase}
@@ -44,15 +42,13 @@ export default function ExperienceSection() {
                             ]}
                         />
                     </div>
-                </div>
 
-                <div className="timeline-item pb-8">
-                    <div className="timeline-marker"></div>
-                    <div>
+                    <div className="timeline-item pb-8">
+                        <div className="light-marker dark:timeline-marker"></div>
                         <Timeline
                             type="experience"
                             icon={Briefcase}
-                            title="Internt at Cloomero"
+                            title="Intern at Cloomero"
                             company="Virtual Classroom Platform"
                             period="December 2025 - Present"
                             points={[
@@ -62,6 +58,6 @@ export default function ExperienceSection() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

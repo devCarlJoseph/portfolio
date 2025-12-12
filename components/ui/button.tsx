@@ -8,9 +8,9 @@ const linkButtonVariants = cva(
         variants: {
             variant: {
                 default:
-                    "bg-sky-500 text-white shadow-lg hover:bg-sky-600 transform hover:scale-105",
+                    "bg-black dark:bg-sky-500 text-white shadow-lg hover:bg-gray-900 dark:hover:bg-sky-600 transform hover:scale-105",
                 outline:
-                    "border border-sky-500 text-sky-400 hover:bg-sky-500/10",
+                    "border border-black text-black hover:bg-gray-100 dark:border-sky-500 dark:text-sky-400 dark:hover:bg-sky-500/10",
             },
             size: {
                 default: "px-6 py-3",

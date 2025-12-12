@@ -25,7 +25,7 @@ export const ProjectsData = {
             GithubIcon: Github,
         },
         {
-            title: "SRP Altar Servers Attendance Tracker",
+            title: "SRP Altar Servers Attendance",
             category: "Attendance Tracker",
             description:
                 "The SRP Altar Servers Attendance Tracker is a digital system designed to streamline attendance monitoring, maintain service records, and support better coordination among altar servers.",
