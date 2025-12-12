@@ -16,7 +16,7 @@ export function ProjectSection({ className }: { className?: string }) {
                 </ScrollFadeIn>
 
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-2">
                     {ProjectsData.data.map((project, index) => (
                         <ScrollFadeIn key={project.title} delay={index * 0.1} className="w-full">
                             <ProjectCard

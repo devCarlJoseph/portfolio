@@ -2,6 +2,6 @@ import { ProjectSection } from "@/components/content/ProjectSection";
 
 export default function Projects() {
     return <>
-        <ProjectSection className="pt-15" />
+        <ProjectSection className="py-20" />
     </>
 }

@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils";
 import { NavData } from "@/lib/data/navigation";
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 
-
 export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,6 +37,7 @@ export function Navbar() {
             >
                 <nav className="w-full">
                     <div className="mx-auto w-full max-w-screen-xl flex justify-between items-center py-4 px-6 lg:px-16">
+
                         <div>
                             <Link
                                 href="#hero"
@@ -52,7 +52,9 @@ export function Navbar() {
 
                         <div className="hidden lg:flex items-center gap-4">
                             {NavData.navbar.data.map((link) => {
-                                const isActive = currentPath === link.href || selectedLink === link.href;
+                                const isActive =
+                                    currentPath === link.href || selectedLink === link.href;
+
                                 return (
                                     <Link
                                         key={link.name}
@@ -69,31 +71,42 @@ export function Navbar() {
                                     </Link>
                                 );
                             })}
+
                             <AnimatedThemeToggler className="ml-2 cursor-pointer hover:text-sky-400" />
                         </div>
+
+                        <button
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            className="lg:hidden p-2 text-gray-900 dark:text-gray-200"
+                        >
+                            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                        </button>
+
                     </div>
                 </nav>
             </header>
 
-
-
             <div
                 className={cn(
-                    "fixed top-16 left-0 w-full bg-slate-900/95 backdrop-blur-sm shadow-md transition-transform transform z-40 lg:hidden",
+                    "fixed top-16 left-0 w-full bg-white dark:bg-slate-900/95 backdrop-blur-sm shadow-md transition-transform transform z-40 lg:hidden",
                     isMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
                 )}
             >
                 <div className="flex flex-col space-y-2 py-6 px-4 lg:px-8 max-w-screen-lg mx-auto w-full">
                     {NavData.navbar.data.map((link) => {
-                        const isActive = currentPath === link.href || selectedLink === link.href;
+                        const isActive =
+                            currentPath === link.href || selectedLink === link.href;
+
                         return (
                             <Link
                                 key={link.name}
                                 href={link.href}
                                 onMouseDown={() => handleLinkSelect(link.href)}
                                 className={cn(
-                                    "py-2 px-4 rounded-md text-gray-200 text-center",
-                                    isActive ? "bg-slate-800 text-white" : "hover:bg-slate-800 hover:text-white"
+                                    "py-2 px-4 rounded-md dark:text-gray-200 text-center",
+                                    isActive
+                                        ? "bg-gray-300 dark:bg-slate-800 dark:text-white"
+                                        : "dark:hover:bg-slate-800 dark:hover:text-white"
                                 )}
                             >
                                 {link.name}
@@ -101,9 +114,8 @@ export function Navbar() {
                         );
                     })}
 
-                    <AnimatedThemeToggler className="mt-4 p-2 rounded-md w-full text-gray-200 hover:bg-slate-800 cursor-pointer" />
+                    <AnimatedThemeToggler className="flex justify-center mt-4 p-2 rounded-md w-full dark:text-gray-200 hover:bg-slate-800 cursor-pointer" />
                 </div>
-
             </div>
 
             {isMenuOpen && (

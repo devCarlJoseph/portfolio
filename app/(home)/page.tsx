@@ -6,9 +6,9 @@ import { CTASection } from "@/components/content/CTASection";
 export default function Home() {
   return (
     <>
-      <HeroSection className="my-2 pt-15 pb-4 lg:pb-3 lg:my-7"/>
+      <HeroSection className="my-14 pb-4 lg:pb-1 lg:mt-17 lg:mb-12"/>
       <ProjectSection className="py-1" />
-      <CTASection className="mt-2 lg:mt-20 lg:mb-15 py-20" />
+      <CTASection className="my-15 lg:my-20 py-20" />
     </>
   );
 }

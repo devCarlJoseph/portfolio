@@ -4,8 +4,8 @@ import { AboutProfile } from "@/components/content/AboutProfile";
 export default function About() {
     return (
         <>
-            <AboutProfile className="mt-15 mb-7"/>
-            <AboutSection />
+            <AboutProfile className="mt-35 mb-2"/>
+            <AboutSection/>
         </>
     );
 }

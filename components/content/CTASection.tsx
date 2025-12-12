@@ -9,12 +9,12 @@ export function CTASection({ className }: { className?: string }) {
     return (
         <section
             className={cn(
-                "relative bg-slate-900 overflow-hidden mx-1 lg:mx-22 py-16",
+                "relative bg-slate-900 overflow-hidden mx-1 lg:mx-22 py-16 rounded-xl",
                 className
             )}
         >
             <Dotted />
-            <div className="absolute inset-0 bg-slate-950/40 z-0"></div>
+            <div className="absolute inset-0 bg-slate-950/40 z-0 rounrded-xl"></div>
 
             <div className="relative z-10 mx-auto w-full max-w-screen-xl px-6 lg:px-16 text-center">
                 <ScrollFadeIn>

@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/content/Contact/ContactForm";
 
 export function ContactSection() {
     return (
-        <section className="py-20 px-2">
+        <section className="py-35 px-2">
             <ScrollFadeIn>
                 <div className="text-center mb-12">
                     <h2 className="light-heading-line dark:section-heading-line text-4xl font-bold dark:text-white mx-auto">
