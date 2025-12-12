@@ -14,7 +14,7 @@ export function Experience() {
                 </ScrollFadeIn>
 
                 <div className="space-y-8">
-                    {ExperienceData.data.map((item, index) => {
+                    {ExperienceData.map((item, index) => {
                         const Icon = item.icon;
 
                         return (
@@ -32,7 +32,6 @@ export function Experience() {
                                     />
                                 </ScrollFadeIn>
                             </div>
-
                         );
                     })}
                 </div>
