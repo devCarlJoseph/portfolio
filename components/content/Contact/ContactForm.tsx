@@ -102,7 +102,7 @@ export function ContactForm() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-3 py-2 dark:bg-slate-900 border border-slate-700 rounded-lg text-white placeholder-slate-500
+                className="w-full px-3 py-2 dark:bg-slate-900 border border-slate-700 rounded-lg dark:text-white placeholder-slate-500
               focus:border-sky-500 focus:ring-sky-500 transition"
                 placeholder="Your Name"
               />
@@ -115,7 +115,7 @@ export function ContactForm() {
                 id="email"
                 name="email"
                 required
-                className="w-full px-3 py-2 dark:bg-slate-900 border border-slate-700 rounded-lg text-white placeholder-slate-500
+                className="w-full px-3 py-2 dark:bg-slate-900 border border-slate-700 rounded-lg dark:text-white placeholder-slate-500
               focus:border-sky-500 focus:ring-sky-500 transition"
                 placeholder="Your Email"
               />
@@ -128,7 +128,7 @@ export function ContactForm() {
                 name="message"
                 rows={4}
                 required
-                className="w-full px-3 py-2 dark:bg-slate-900 border border-slate-700 rounded-lg text-white placeholder-slate-500
+                className="w-full px-3 py-2 dark:bg-slate-900 border border-slate-700 rounded-lg dark:text-white placeholder-slate-500
               focus:border-sky-500 focus:ring-sky-500 transition"
                 placeholder="Your Message"
               />
