@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Card, CardContent, CardHeader, CardDescription, CardTitle } from "@/components/ui/card";
 import { ShineBorder } from "@/components/ui/shine-border";
 
@@ -26,13 +26,51 @@ export function ContactForm() {
 
   const [message, setMessage] = useState("");
   const [showAlert, setShowAlert] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  useEffect(() => {
+    if (!showAlert) return;
+
+    const timer = setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, [showAlert]);
+
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setMessage("Thank you for your message! I will be in touch soon.");
-    setShowAlert(true);
-    e.currentTarget.reset();
+    setLoading(true);
+    setShowAlert(false);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+        }),
+      });
+
+      if (!res.ok) throw new Error("Failed");
+
+      setMessage("Thank you for your message! I will be in touch soon.");
+      setShowAlert(true);
+      form.reset();
+    } catch {
+      setMessage("Something went wrong. Please try again.");
+      setShowAlert(true);
+    } finally {
+      setLoading(false);
+    }
   };
+
 
   return (
     <Card className="relative dark:bg-slate-800/50 p-4 sm:p-6 rounded-xl shadow-lg border border-slate-700 overflow-hidden w-full order-1 lg:order-2">
@@ -98,10 +136,11 @@ export function ContactForm() {
 
             <button
               type="submit"
-              className="w-full px-5 mb-2 py-2.5 bg-black dark:bg-sky-500 text-white font-semibold rounded-lg shadow-lg  hover:bg-gray-800 cursor-pointer dark:hover:bg-sky-600 transition duration-300"
-            >
-              Send Message
+              disabled={loading}
+              className="w-full px-5 mb-2 py-2.5 bg-black dark:bg-sky-500 text-white font-semibold rounded-lg shadow-lg hover:bg-gray-800 dark:hover:bg-sky-600 transition duration-300 disabled:opacity-50 cursor-pointer">
+              {loading ? "Sending..." : "Send Message"}
             </button>
+
           </form>
         </CardContent>
       </div>
