@@ -10,7 +10,28 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const sora = Sora({ subsets: ["latin"], variable: "--font-sora" });
 
 export const metadata: Metadata = {
-  title: "CJS Portfolio",
+
+  title: "Carl Joseph Sumagang | Portfolio",
+  description: "Portfolio of Carl Joseph Sumagang, a highly motivated Future Developer passionate about full-stack development and software engineering.",
+  keywords: ["Carl Joseph Sumagang", "Portfolio", "Web Developer", "Future Developer", "Full Stack", "Software Engineering", "HayGo Car Rental", "CjCo Restaurant"],
+  authors: [{ name: "Carl Joseph Sumagang" }],
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Carl Joseph Sumagang | Portfolio",
+    description: "Building efficient, user-friendly applications with passion.",
+    url: "carlsumagang.vercel.app",
+    siteName: "Carl Joseph Sumagang - Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Carl Joseph Sumagang | Portfolio",
+    description: "Building efficient, user-friendly applications with passion.",
+  },
 };
 
 const mainVariants = {
@@ -38,6 +59,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `,
           }}
         />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Carl Joseph Sumagang",
+              "url": "https://carlsumagang.vercel.app",
+              "sameAs": [
+                "https://www.linkedin.com/in/carlsumagang",
+                "https://github.com/carlsumagang"
+              ]
+            })
+          }}
+        />
+
       </head>
 
       <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
