@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   description: "Portfolio of Carl Joseph Sumagang, a highly motivated Future Developer passionate about full-stack development and software engineering.",
   keywords: ["Carl Joseph Sumagang", "Portfolio", "Web Developer", "Future Developer", "Full Stack", "Software Engineering", "HayGo Car Rental", "CjCo Restaurant"],
   authors: [{ name: "Carl Joseph Sumagang" }],
+  verification: {
+    google: "google41709774eed56e5b",
+  },
   robots: {
     index: true,
     follow: true,
