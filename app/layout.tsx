@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   keywords: ["Carl Joseph Sumagang", "Portfolio", "Web Developer", "Future Developer", "Full Stack", "Software Engineering", "HayGo Car Rental", "CjCo Restaurant"],
   authors: [{ name: "Carl Joseph Sumagang" }],
   verification: {
-    google: "nFsP4Xn7VtyTeXQ0aj3OqwDp7owD53FLf9G03wHSwWs",
+    google: "google41709774eed56e5b",
   },
   robots: {
     index: true,
