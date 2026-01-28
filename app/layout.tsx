@@ -72,8 +72,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "name": "Carl Joseph Sumagang",
               "url": "https://carlsumagang.vercel.app",
               "sameAs": [
-                "https://www.linkedin.com/in/carlsumagang",
-                "https://github.com/carlsumagang"
+                "https://www.linkedin.com/in/carl-joseph-sumagang-38291a379/",
+                "https://github.com/devCarlJoseph"
               ]
             })
           }}
