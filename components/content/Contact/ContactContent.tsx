@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Mail, Linkedin, Github, Phone, MessageCircle, Clock, Twitter, Facebook } from "lucide-react";
+import { Mail, Linkedin, Github, Phone, MessageCircle, Clock, Instagram, Facebook } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { ShineBorder } from "@/components/ui/shine-border";
 
@@ -46,9 +46,9 @@ export function ContactContent() {
             Icon: Github,
             socials: [
                 { icon: Github, href: "https://github.com/devCarlJoseph" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/sumagang-carl-joseph-38291a379/" },
-                { icon: Twitter, href: "https://twitter.com/yourusername" },
-                { icon: Facebook, href: "https://facebook.com/yourusername" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/carl-joseph-sumagang-38291a379/" },
+                { icon: Instagram, href: "https://www.instagram.com/kuyacaarl/" },
+                { icon: Facebook, href: "https://www.facebook.com/Jeekoy17" },
             ],
         },
     ];
